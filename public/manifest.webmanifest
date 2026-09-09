@@ -1,0 +1,16 @@
+{
+  "name": "Cancha — Solo deportes",
+  "short_name": "Cancha",
+  "description": "Mercado de predicción deportiva entre personas. Solo deportes.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#c9f56b",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

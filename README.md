@@ -48,6 +48,30 @@ npm test           # pruebas del motor de casamiento
 npm run build      # typecheck + build de producción en dist/
 ```
 
+## Correr en tu teléfono
+
+**Opción 1 · Desde tu computadora, en la misma red Wi-Fi**
+
+```bash
+npm install
+npm run dev -- --host
+```
+
+Vite imprime una dirección tipo `http://192.168.1.23:5173/`. Ábrela en el navegador del
+teléfono (misma red). En iPhone/Android puedes usar **Compartir → Agregar a pantalla de inicio**
+y se instala como app, sin barra del navegador.
+
+**Opción 2 · GitHub Pages (URL permanente)**
+
+El flujo `.github/workflows/pages.yml` construye y publica `dist/` en cada push a `main`.
+Actívalo una vez en *Settings → Pages → Source: GitHub Actions*. La app queda en
+`https://<usuario>.github.io/<repo>/`. Las rutas usan `#/` para funcionar en cualquier subcarpeta.
+
+**Opción 3 · Cualquier hosting estático**
+
+`npm run build` genera `dist/` con rutas relativas; súbelo a Netlify, Vercel, Cloudflare Pages
+o un bucket S3 tal cual.
+
 ## Estructura
 
 ```
